@@ -1,40 +1,27 @@
-// {
-//   "compilerOptions": {
-//     "target": "esnext",
-//     "useDefineForClassFields": true,
-//     "module": "esnext",
-//     "moduleResolution": "Node",
-//     "strict": true,
-//     "jsx": "preserve",
-//     "sourceMap": true,
-//     "resolveJsonModule": true,
-//     "isolatedModules": true,
-//     "esModuleInterop": true,
-//     "lib": ["esnext", "dom"],
-//     "allowSyntheticDefaultImports": true,
-//     "composite": true,
-//     "noEmit": true,
-//     "skipLibCheck": true,
-//     "incremental":false
-//   },
-//   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-//   "exclude": ["dist", "node_modules", "**/node_modules/*", "**/*.js"],
-//   "references": [{ "path": "./tsconfig.node.json" }]
-// }
-
 {
   "compilerOptions": {
-    "allowJs": true,
-    "module": "ES6",
-    "target": "ES2018",
-    "noImplicitAny": false,
-    "declaration": true,
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "preserve",
     "sourceMap": true,
-    "lib": ["ES2018", "DOM", "DOM.Iterable"],
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
     "allowSyntheticDefaultImports": true,
-    "types": ["unplugin-vue-define-options"]
+    "noEmit": true,
+    "skipLibCheck": true,
+    "incremental":false,
+    "types": ["vite/client"],
+    "baseUrl": "",
+    "paths": {
+      "@/*": ["src/*"]
+    },
   },
-  "references": [{ "path": "./tsconfig.node.json" }],
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "exclude": ["dist", "node_modules", "**/node_modules/*", "**/*.js"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

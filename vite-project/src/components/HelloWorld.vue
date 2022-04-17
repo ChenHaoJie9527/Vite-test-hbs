@@ -9,7 +9,7 @@ const count = ref(0)
 <template>
   <h1>{{ msg }}</h1>
 
-  <p>
+  <p class="header">
     Recommended IDE setup:
     <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>
     +
@@ -33,7 +33,10 @@ const count = ref(0)
   </p>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+.header {
+  color: $theme-color;
+}
 a {
   color: #42b983;
 }

@@ -1,0 +1,8 @@
+
+.NavBart {
+  color: red;
+  text-decoration: dashed;
+  &.active {
+    color: blue;
+  }
+}
