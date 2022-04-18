@@ -16,8 +16,9 @@
     "skipLibCheck": true,
     "incremental":false,
     "types": ["vite/client"],
-    "baseUrl": "",
+    "baseUrl": "./",
     "paths": {
+      "@": ["src"],
       "@/*": ["src/*"]
     },
   },

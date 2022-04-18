@@ -22,8 +22,8 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      find: "@",
-      replacement: path.resolve(__dirname, "src"),
+      // //文件系统路径的别名, 绝对路径
+      "@": path.resolve(__dirname, "src")
     },
   },
   // css配置
