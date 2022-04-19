@@ -1,0 +1,9 @@
+node_modules
+dist
+pnpm-lock.yaml
+CHANGELOG.en-US.md
+学习随记.md
+!.*
+docs/components.d.ts
+coverage
+ssr-testing/cases/*
